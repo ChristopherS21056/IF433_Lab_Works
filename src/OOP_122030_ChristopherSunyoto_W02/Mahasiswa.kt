@@ -2,8 +2,8 @@ package oop_122030_ChristopherSunyoto.week02
 
 class Mahasiswa(val name: String,
                 val nim: String,
+                var major: String,
                 var gpa: Double = 0.0,  // <-- Default Argument
-                var major: String
 )
 {
     init {
@@ -17,7 +17,7 @@ class Mahasiswa(val name: String,
     }
     // Secondary Constructor
     // Wajib memanggil Primary constructor menggunakan 'this()'
-    constructor(name: String, nim: String) : this(name, nim, "Non-Matriculated") {
+    constructor(name: String, nim: String) : this(name, nim, major = "Non-Matriculated") {
         println("LOG: Menggunakan copnstructor jalur umum (Tanpa Jurusan).")
     }
 }

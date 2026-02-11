@@ -27,4 +27,21 @@ fun main() {
         val s1 = Mahasiswa(name, nim, major)
         println("Status: Pendaftaran Selesai.")
     }
+    print("Pilih Jalur (1. Reguler, 2. Umum): ")
+    val type =scanner.nextInt()
+    scanner.nextLine() // Consume newline
+
+    if (type == 1) {
+        print("Masukkan Jurusan: ")
+        val major = scanner.nextLine()
+        // Memanggil Primary Constructor
+        val s1 = Mahasiswa(name, nim, major)
+        println("Terdaftar di: ${s1.major} dengan GPA awal ${s1.gpa}")
+    } else if (type == 2) {
+        // Memanggil secondary Constructor, jurusan otomatis "Non-Matriculated"
+        val s2 = Mahasiswa(name, nim)
+        println("Terdaftar di: ${s2.major} dengan GPA awal {s2.gpa}")
+    } else {
+        println("Pilihan ngawur, pendaftaran batal!")
+    }
 }

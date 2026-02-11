@@ -1,6 +1,10 @@
 package oop_122030_ChristopherSunyoto.week02
 
-class Mahasiswa(val name: String, val nim: String, val major: String)
+class Mahasiswa(val name: String,
+                val nim: String,
+                var gpa: Double = 0.0,  // <-- Default Argument
+                var major: String
+)
 {
     init {
         // Validasi sederhana: Cek Panjang NIM

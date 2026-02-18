@@ -17,5 +17,11 @@ private var performanceRating: Int = 3
 
 fun increasePerformance() {
     performanceRating++
-    println("Kinerja $bnamne meningkat! Rating: $performanc")
+    println("Kinerja $namne meningkat! Rating: $performance")
+}
+
+// Kita tidak buat getter untuk performanceRatinbg, jadi ini benar benar rahasia
+// Kecuali kita buat function khusus untuk print.
+fun printStatus() {
+    println("Karyawan: $name, Ratimng: $performanceRating")
 }

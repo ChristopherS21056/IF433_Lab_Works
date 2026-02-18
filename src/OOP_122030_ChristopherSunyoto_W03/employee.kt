@@ -10,18 +10,19 @@ class Employee(val name: String) {
                 field ==  value // Gunakan field untuk assign nilai asli
             }
         }
-}
+    // Hanya bisa diakses di file/class ini saja
+    private var performanceRating: Int = 3
 
-// Hanya bisa diakses di file/class ini saja
-private var performanceRating: Int = 3
+    fun increasePerformance() {
+        performanceRating++
+        println("Kinerja $name meningkat! Rating: $performanceRating")
+    }
 
-fun increasePerformance() {
-    performanceRating++
-    println("Kinerja $namne meningkat! Rating: $performance")
-}
+    // Kita tidak buat getter untuk performanceRatinbg, jadi ini benar benar rahasia
+    // Kecuali kita buat function khusus untuk print.
+    fun printStatus() {
+        println("Karyawan: $name, Ratimng: $performanceRating")
+    }
 
-// Kita tidak buat getter untuk performanceRatinbg, jadi ini benar benar rahasia
-// Kecuali kita buat function khusus untuk print.
-fun printStatus() {
-    println("Karyawan: $name, Ratimng: $performanceRating")
+
 }

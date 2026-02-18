@@ -11,3 +11,11 @@ class Employee(val name: String) {
             }
         }
 }
+
+// Hanya bisa diakses di file/class ini saja
+private var performanceRating: Int = 3
+
+fun increasePerformance() {
+    performanceRating++
+    println("Kinerja $bnamne meningkat! Rating: $performanc")
+}

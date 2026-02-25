@@ -1,14 +1,9 @@
 package oop_122030_ChristopherSunyoto_Week04.tugas2
 
-class Manager(
-    name: String,
-    baseSalary: Int
-) : Employee(name, baseSalary) {
-
+class Manager(name: String, baseSalary: Int) : Employee(name, baseSalary) {
     override fun work() {
         println("$name sedang memimpin rapat divisi.")
     }
-
     override fun calculateBonus(): Int {
         return super.calculateBonus() + 500000
     }

@@ -11,13 +11,5 @@ fun main() {
     for (payment in paymentList) {
         println("\nMemproses tagihan 75000.0 untuk: ${payment.accountName}")
         payment.processPayment(75000.0)
-
-        if (payment is EWallet) {
-           println(">> Mendeteksi e-wallet dengan saldo kurang. Melakukan auto Top-Up...")
-            payment.topUp(50000.0)
-
-            println(">> Mencoba proses pembayaran kembali...")
-            payment.processPayment(75000.0)
-        }
     }
 }

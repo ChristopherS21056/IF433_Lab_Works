@@ -1,4 +1,4 @@
-package oop_122030_ChristopherSunyoto_Week06
+package oop_122030_ChristopherSunyoto_Week06.lab
 
 interface Clickable {
     // ERROR : Property in an interface cannot have a backing field

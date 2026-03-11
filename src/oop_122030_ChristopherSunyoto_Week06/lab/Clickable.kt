@@ -1,9 +1,11 @@
 package oop_122030_ChristopherSunyoto_Week06.lab
 
 interface Clickable {
-    // ERROR : Property in an interface cannot have a backing field
-    val name : String = "Tombol Rahasia"
-
-    // Functiomn without body (implicity abstract)
+    val name : String // Abstract property, tidak ada nilai default
     fun click()
+    class Button(override val name : String) : Clickable {
+        override fun click() {
+            println ("Tombol '$name' berhasil diklik!")
+        }
+    }
 }

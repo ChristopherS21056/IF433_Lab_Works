@@ -61,9 +61,13 @@ fun main() {
     try {
         // Alih-alih apiResponse["token"]!!, gunakan:
         val token = requireNotNull(apiResponse["token"]) {
-            "CRITICAL EXCEPTION: Token otentikasi tidak ditemukan dari server!" [cite: 133]
+            "CRITICAL EXCEPTION: Token otentikasi tidak ditemukan dari server!"
         }
     } catch (e: IllegalArgumentException) {
-        println(e.message) // Mencetak pesan custom kita, bukan crash buta [cite: 136]
+        println(e.message) // Mencetak pesan custom kita, bukan crash buta
     }
+    println("\n=== TEST JAVA INTEROP ===")
+    val javaResponse = LegacyJavaAPI.fetchServerStatus()
+    val statusLength = javaResponse!!.length
+    println("Status dari Java: $javaResponse (Length: $statusLength)")
 }

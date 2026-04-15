@@ -1,7 +1,8 @@
-package oop_122030_ChristopherSunyoto_Week08.IF433_Lab_Works.TUGAS;
+package oop_122030_ChristopherSunyoto_Week08.TUGAS
 
 public class LegacyJavaAPI {
-    // Fungsi Java yang tidak diketahui nullability-nya oleh Kotlin
+    // Fungsi ini ditulis dalam Jaba. Kotlin tidak tahu apakah kembaliannya Nullable.
     public static String fetchServerStatus() {
         return "SERVER_ONLINE_200_OK";
+    }
 }

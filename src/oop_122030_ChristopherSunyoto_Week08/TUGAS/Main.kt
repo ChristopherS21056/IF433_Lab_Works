@@ -5,7 +5,7 @@ fun main() {
     val emptyOrder = Order(null, null)
 
     // Rantai safe calls yang elegan
-    val destination = emptyOrder.deliveryDetails?.address?.city?.name ? : "Kota Tidak Diketahui"
+    val destination = emptyOrder.deliveryDetails?.address?.city?.name ?: "Kota Tidak Diketahui"
     println("Tujuan pengiriman: $destination")
 
     println("\n=== TEST LET BLOCK ===")
@@ -16,6 +16,7 @@ fun main() {
         val tax = price * 0.11
         "Transaksi Valid. Harga: nRp$price, Pajak: Rp$tax"
     } ?: "Transaksi Invalid: Harga belum di-set!"
+    println(receipt)
 
     println("\n=== TEST SAFE CASTING ===")
     val mixedData: List<Any> = listOf(
@@ -34,7 +35,16 @@ fun main() {
         }
     }
     val someObject: Any = 100
-    val safeString = someObject as? String ?: "Unknown String" [cite: 107]
+    val safeString = someObject as? String ?: "Unknown String"
     println("Hasil cast fallback: $safeString")
-    println(receipt)
+    // HASIL OUTPUT : === TEST SAFE CALLS & ELVIS ===
+    //Tujuan pengiriman: Kota Tidak Diketahui
+    //
+    //=== TEST LET BLOCK ===
+    //Transaksi Valid. Harga: nRp250000, Pajak: Rp27500.0
+    //
+    //=== TEST SAFE CASTING ===
+    //Ditemukan teks: SMARTPHONE
+    //Ditemukan teks: LAPTOP
+    //Hasil cast fallback: Unknown String
 }

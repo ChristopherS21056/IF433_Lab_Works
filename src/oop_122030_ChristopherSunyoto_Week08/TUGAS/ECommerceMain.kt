@@ -23,4 +23,5 @@ fun main() {
             println("LOG PERINGATAN: Data korup terdeteksi - ${e.message}")
         }
     }
+
 }

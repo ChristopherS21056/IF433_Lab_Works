@@ -1,4 +1,4 @@
-package oop_122030_ChristopherSunyoto_week07_TUGAS.Mandiri
+package oop_122030_ChristopherSunyoto_week07.oop_122030_ChristopherSunyoto_week07_TUGAS.Mandiri
 
 class Weapon private constructor(val item: GameItem, val durability: Int) {
 

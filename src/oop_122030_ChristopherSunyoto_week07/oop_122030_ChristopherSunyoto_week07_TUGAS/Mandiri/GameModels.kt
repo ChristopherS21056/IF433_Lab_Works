@@ -1,4 +1,4 @@
-package oop_122030_ChristopherSunyoto_week07_TUGAS.Mandiri
+package oop_122030_ChristopherSunyoto_week07.oop_122030_ChristopherSunyoto_week07_TUGAS.Mandiri
 
 enum class ItemRarity(val dropChance: Int) {
     COMMON(70),

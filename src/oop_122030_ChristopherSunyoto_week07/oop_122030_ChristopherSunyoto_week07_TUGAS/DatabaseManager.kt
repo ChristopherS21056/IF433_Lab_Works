@@ -1,4 +1,4 @@
-package oop_122030_ChristopherSunyoto_week07_TUGAS
+package oop_122030_ChristopherSunyoto_week07.oop_122030_ChristopherSunyoto_week07_TUGAS
 
 object DatabaseManager {
     var connectionStatus: String = "Disconnected"

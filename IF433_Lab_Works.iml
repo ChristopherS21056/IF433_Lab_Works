@@ -13,6 +13,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/oop_122030_ChristopherSunyoto_Week04" />
       <excludeFolder url="file://$MODULE_DIR$/src/oop_122030_ChristopherSunyoto_Week05" />
       <excludeFolder url="file://$MODULE_DIR$/src/oop_122030_ChristopherSunyoto_Week06" />
+      <excludeFolder url="file://$MODULE_DIR$/src/oop_122030_ChristopherSunyoto_week07/oop_122030_ChristopherSunyoto_week07_TUGAS" />
+      <excludeFolder url="file://$MODULE_DIR$/src/oop_122030_ChristopherSunyoto_week07" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

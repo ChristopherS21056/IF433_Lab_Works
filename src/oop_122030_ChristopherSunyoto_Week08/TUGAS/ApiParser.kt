@@ -27,6 +27,7 @@ class ApiParser {
             is Electronic -> product.id
             is Clothing -> product.id
         }
+
         val transactionId = JavaPaymentService.processPayment(id)!!
         println("Transaksi Berhasil! ID: $transactionId")
     }

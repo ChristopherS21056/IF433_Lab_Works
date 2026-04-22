@@ -54,6 +54,6 @@ fun main() {
     )
     arKHS.remove("Toni")
     arKHS["Luffy"] = 92
-    arKHS = { }
+    arKHS["Zoro"] = 97
     println(arKHS)
 }

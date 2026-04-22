@@ -20,4 +20,16 @@ fun main() {
     arMatkul[2] = "Aljabar linear"
     arMatkul.remove("Pemweb")
     println(arMatkul)
+
+    println("======= SET OF IMUT ========")
+    var arNilai = setOf(80, 90, 75, 90, 98, 77, 54, 74)
+    println("banyak nilai : ${arNilai.size}")
+    println("ada angka 90 gak? ${arNilai.contains(90)}")
+    println(arNilai)
+
+    println("======= SET OF MUTABLE ========")
+    val arMahasiswa = mutableSetOf("Andi", "Yanto","Udin", "Yuda")
+    arMahasiswa.add("Yanti")
+    arMahasiswa.add("Udin")
+    println(arMahasiswa)
 }

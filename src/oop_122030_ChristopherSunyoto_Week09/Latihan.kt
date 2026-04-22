@@ -56,4 +56,35 @@ fun main() {
     arKHS["Luffy"] = 92
     arKHS["Zoro"] = 97
     println(arKHS)
+
+    println("========= LAMBDA =========")
+    // FUNCTION BIASA
+    fun tambah(a: Int, b: Int): Int {
+        return  a + b
+    }
+    println("Hasil penambahan ${tambah(5, 3)}")
+
+    // function lambda  -> tulisnya kesamping atau horizontal
+    val kurang = {a: Int, b:Int -> a-b}
+    println("Hasil pengurangan ${kurang (5, 3)}")
+
+    println("======= LAMBDA {IT} ========")
+    val pangkat = {a:Int -> a*a}
+    val hasilPangkat: (Int)-> Int = {it * it}
+    println("Hasil Pangkat ${hasilPangkat(5)}")
+
+    println("======= FOREACH BIASA ========")
+    for (a in arMatkul) {
+        println(a)
+    }
+    println("======= FOREACH IT ========")
+    arMatkul.forEach {
+        println(it)
+    }
+
+    println("======= FOREACH VARIABLE ========")
+    arMatkul.forEach { mk ->
+        println(mk)
+    }
+
 }

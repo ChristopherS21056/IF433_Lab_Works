@@ -13,5 +13,5 @@ fun main() {
     val multiplied = evens.map { it * 10 }
     val asStrings = multiplied.map { "Rp ${it}k"}
     println("Multiplied: $multiplied")
-    println("Formatted: $asStrings)
+    println("Formatted: $asStrings")
 }

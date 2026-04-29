@@ -9,4 +9,5 @@ fun main() {
 
     println("Isi Dompet: ${coinRepo.getAll()}")
 
+    val response = ApiResponse("200 OK", coinRepo.getAll())
 }

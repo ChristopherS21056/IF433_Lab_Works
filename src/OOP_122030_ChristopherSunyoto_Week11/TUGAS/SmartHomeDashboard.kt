@@ -8,4 +8,11 @@ fun main() {
             powerLoad = 12
         }
     )
+    SmartDevice("Ezviz Outdoor", "Camera").apply {
+        isOnline = true
+        powerLoad = 5
+    }.also {
+        println("(LOG) Kamera terhubung")
+        homeDevices.add(it)
+    }
 }

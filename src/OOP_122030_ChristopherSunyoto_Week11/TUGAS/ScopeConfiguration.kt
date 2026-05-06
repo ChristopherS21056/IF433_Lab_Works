@@ -3,10 +3,15 @@ package oop_122030_ChristopherSunyoto_Week11.TUGAS
 data class User(var name: String = "", var age: Int = 0)
 
 fun main() {
-    // TEST APPLY
     println("=== TEST APPLY ===")
     val user = User().apply {
         name = "Alex"
         age = 25
     }
     println(user)
+    println("\n=== TEST ALSO ===")
+    val numbers = mutableListOf(1, 2, 3)
+    numbers.also {
+        println("Log Sebelum ditambah: $it")
+    }.add(4)
+    println("Setelah ditambah: $numbers")
